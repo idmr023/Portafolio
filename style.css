@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sección Menu*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}   
+.menu__header{
+    display: flex;
+}
+.menu__header img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.menu__list{
+    display: none;
+}
+/*Sección header*/
+.title__div{
+    padding: 15px;
+}
+.title__bio, .title__subsection{
+    margin: 15px 15px 15px 0;
+}
+.title__network{
+    display: flex;
+    text-align: center;  
+}
+.title__network__item{
+    margin: 5px;
+    font-weight: bold;
+}
+.title__profile{
+    max-width: 360px;
+    max-height: 100px;
+}
+
+/*Sección acerca de skills y hobbies*/
+section.about{   
+    background-color: #EAF2FD;
+    padding: 15px;
+    margin: 15px;   
+    text-align: justify;
+}
+section.skills, section.hobbies{
+    text-align: center;
+}
+.skills__title, .hobbies__title{
+    margin: 15px;
+}
+.skills__line, .hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills__box, .hobbies__box{
+    position: relative;
+    text-align: center;
+    background: #fff;
+    margin: 5px;
+    padding: 10px;
+    width: 156px;
+    height: 87px;
+}
+.skills__img svg, .hobbies__img svg{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 15px;
+    font-size: 32px;
+    color: #2A7AE4;
+}
+.skills__name, .hobbies__name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+section.academic{
+    text-align: center;
+    background-color: #EAF2FD;
+    padding: 35px;
+    margin: 15px 0px 30px 0px;
+}
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.academic__courses__box{
+    text-align: center;
+    width: 296px;
+    margin: 10px auto 35px auto;
+    
+}
+.academic__courses__list{
+    line-height: 1.5;
+}
+.academic__courses__item__img{
+    background-color: #fff;
+    margin: 20px auto 10px auto;
+}
+.academic__courses__item__img img{
+    max-width: 250px;
+    max-height: 140px;  
+}
+.academic__courses__item__title, .academic__courses__item__subtitle{
+    display: block;
+}
+section.experience{
+    max-width: 100%;
+    text-align: center;
+    padding: 35px;
+    margin: 15px 0px 30px 0px;
+}
+.experience__section__title{
+    margin-bottom: 15px;
+}
+.experiencie__box{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    max-width: 1024px;
+    max-height: 427px;
+    margin: 0 auto;
+}
+.experience__img{
+    overflow: hidden;
+    max-width: 700px;
+}
+.experience__info{
+    display: block;
+    margin: 0px auto 25px auto;
+    line-height: 1.5;
+    text-align: left;
+}
+.experience__title, .experience__text, .experience__description{
+    float: left;
+}
+.experience__title{
+    font-size: 16px;
+    line-height: 2;
+}
+.experiencia__botao, .formcontato__botao{
+    width: 108px;
+    height: 40px;
+    padding: 12px 16px 12px 16px;
+    border: 1px solid;
+    gap: 10px;
+    font-family: 'Raleway';
+}
+.experiencia__botao--repo{
+    color: #2A7AE4;
+    border-color: #2A7AE4;
+    background: transparent;
+}
+.experience__botao--demo, .formcontato__botao{
+    color: #fff;
+    border-color: #2A7AE4;
+    background: #2A7AE4;
+
+}
+/*footeer*/
+
+section.formcontato{
+    margin-bottom: 55px;
+    background-color: #EAF2FD;
+    padding: 15px;
+    padding-bottom: 50px;
+}
+.formcontato__contacto{
+    text-align: center;
+    margin: 0 auto;
+}
+.formcontato__img{
+    display: none;
+}
+.formcontato{ 
+    object-fit: cover;
+    margin: 0 auto;
+}
+.formcontato__text{
+    display: block;
+
+}
+.formcontato__input, .formcontato__textarea{
+    width: 296px;
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 4px solid #2A7AE4;
+    font-family: 'Raleway';
+    margin: 15px auto 15px auto;
+}
+.formcontato__botao{
+    float: left;
+    width: auto;
+}
+.footer__rodape{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1024px){
+    h3{
+        font-size: 32px;
+    }
+    .academic__courses__item__img{
+        display: grid;
+        place-items: center;
+        width: 368px;
+        height: 286px; 
+    }
+    .menu__nav{
+        display: flex;
+        align-items: center;
+    }
+    .menu__list{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px 0 0;
+    }
+    .menu__list__item{
+        display: flex;
+        margin: 0 0 0 10px;
+    }
+    section.title{
+        margin: 0px 80px 0px 80px;
+    }
+    .title__div{
+        align-items: center;
+    }
+    .about__container{
+        padding: 40px 80px 80px 80px;
+        width: 60%;
+    }
+    .experiencie__box{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: auto auto 40px 20px;
+    }
+    .experience__info{
+        margin: auto auto auto 20px;
+    }
+    .experience .experiencie__box:nth-child(2) .experience__img, 
+    .experience .experiencie__box:nth-child(4) .experience__img {
+        order: 2;
+    }
+    .experience .experiencie__box:nth-child(2) .experience__info, 
+    .experience .experiencie__box:nth-child(4) .experience__info{
+        order: 1;
+    }
+    .formcontato__contacto{
+        display: flex;
+        width: 100%;   
+        margin: 0 auto;
+    }
+    .formcontato__img{
+        display: flex;
+        margin-right: 50px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .title__bio{
+        font-size: 52px;
+    }
+    .title__div{
+        display: inline-flex;
+        order: 2;
+    }
+    .title__profile{
+        order: 1;
+    }
+    .title__profile{
+        max-width: 370px;
+        max-height: 370px;
+    }
+    .menu__list__item__contato{
+        font-weight: bold;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+    p{
+        font-size: 16px;
+    }
+    .formcontato, .formcontato__input, .formcontato__textarea{
+        margin: 40px auto;
+        width: 100%;
+    }
+}
