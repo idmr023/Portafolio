@@ -1,0 +1,13 @@
+---
+interface Props {
+	path: string;
+	nombre: string;
+}
+
+const { path, nombre } = Astro.props;
+---
+
+<div class="text-center p-2 w-full md:w-1/2 lg:w-1/4">
+	<i class={path} style="color: #ffffff;"></i>
+	<p>{nombre}</p>
+</div>
