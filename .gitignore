@@ -1,8 +1,8 @@
+# build output
+dist/
+
 # generated types
 .astro/
-
-#VS configuration
-.vscode/
 
 # dependencies
 node_modules/
@@ -19,4 +19,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
 .vercel
