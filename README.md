@@ -41,7 +41,9 @@ En este proyecto he hecho mi portafolio, el cual contiene una breve descripción
 ## ⚒ Tecnologías usadas
 
 ![Astro][Astro] : Framework para el desarrollo web que permite crear páginas web rapida y efectivamente.
+<br/>
 ![React][React.js] : Librería diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de SAPs.
+<br/>
 ![Tailwind][Tailwind.css] : Framework que permite escribir css directamente como clases, ahorrando líneas de código y espacio.
 
 <!-- ROADMAP -->
