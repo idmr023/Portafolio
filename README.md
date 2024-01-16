@@ -27,7 +27,7 @@
         <li><a href="#contenido">Contenido</a></li>
       </ul>            
       <ul>
-        <li><a href="#contenido">Acerca del creador</a></li>
+        <li><a href="#acerca-de-mi">Acerca de mi</a></li>
       </ul>    
       <ul>
         <li><a href="#actualizaciones">Actualizaciones</a></li>
@@ -41,42 +41,23 @@
 
 ![webpage][webpage-screenshot]
 
-En este proyecto he hecho mi portafolio, el cual contiene una breve descripción sobre mi, demuestra todo mi aprendizaje adquirido, mis estudios y también inlcuye los proyectos que he desarrollado.
+En este proyecto he hecho mi portafolio, el cual contiene una breve descripción sobre mi, demuestra todo mi aprendizaje adquirido, mis estudios y también inlcuye los proyectos que he desarrollado. Lo he desarrollado con ASTRO, TailWind, usando las mejores prácticas y PageSpeed Insights para optimizar mi página y ver que puedo mejorar.
 
 
 ### Tecnologías usadas
 
-* [![React][React.js]]
-* [![Tailwind][Tailwind.css]]
-* [![Astro][Astro]]
+* ![Astro][Astro] : Framework para el desarrollo web que permite crear páginas web rapida y efectivamente.
+* ![React][React.js] : Librería diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de SAPs.
+* ![Tailwind][Tailwind.css] : 
 
 <!-- ROADMAP -->
 ## Actualizaciones
 
-- Implementada creación de foto de perfil mediante API
-- Registro de sesión arreglado (se recargaba por defecto)
-- Todo el CSS y StyledComponents convertido a TailWind
-- Todos los iconos ahora son usados con Font Awesome
-- Los datos del usuario son insertados en un localStorage, para más adelante poder llamarlos desde cualquier lado y así hacer la sección cuenta. También se ingresan en la base de datos
-- Rutas protegidas. Si el usuario no ha iniciado sesión, no puede ingresar a la parte de productos.
-- Botón para cerrar sesión
-- Bug de renderizado infinito solucionado.
-- Vista de la cuenta del usuario (avanzar con esto, con una sesión activa) terminada.
-- Arreglado : Generar contraseña no aparecía
-
-Click en [open issues](https://https://github.com/idmr023/Libreria/issues) para una lista de todas las funcionalidades propuests.
-
-
-<!-- LICENSE -->
-## Licencia
-
-Distribuido bajo una licencia MIT. Vea `LICENSE.txt` para mayor información.
-
-
-<!-- CONTACT -->
-## Contacto
-
-Ivan Manrique - [![linkedin][linkedin-shield]][linkedin-url] - idmr_02@outlook.com
+<!-- Acerca del creador -->
+## Acerca de mi
+Soy Ivan Manrique, un estudiante de Ingenieríad e Software al que le encanta aprender cosas nuevas por eso para tomando cursos, haciendo proyectos, leyendo documentaciones, etc. Me encanta el desarrollo web.
+<br/>
+[![linkedin][linkedin-shield]][linkedin-url] | idmr_02@outlook.com
 
 Link del proyecto: [https://github.com/idmr023/Libreria](https://github.com/idmr023/Libreria)
 
