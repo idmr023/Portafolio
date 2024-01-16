@@ -1,8 +1,9 @@
 ---
-import DemoButton from "../DemoButton.astro";
+import DemoButton from "../Others/DemoButton.astro";
 
 interface Props {
   imgSrc: string;
+  alt: string;
   titulo: string;
   descripcion: string;
   demo: string;
@@ -10,7 +11,7 @@ interface Props {
   tecnologias: string[];
 }
 
-const { imgSrc, titulo, descripcion, demo, repositorio, tecnologias } =
+const { imgSrc, titulo, descripcion, demo, repositorio, tecnologias, alt } =
   Astro.props;
 ---
 
@@ -18,7 +19,7 @@ const { imgSrc, titulo, descripcion, demo, repositorio, tecnologias } =
   <div class="myCard">
     <div class="innerCard">
       <div class="frontSide">
-        <img src={imgSrc} />
+        <img src={imgSrc} alt={alt}/>
         <p class="text-2xl">{titulo}</p>
         <div class="w-full flex justify-evenly">
           {tecnologias.map((tecnologia) => <i class={tecnologia} />)}

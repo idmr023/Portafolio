@@ -1,11 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Webpage/Footer.astro';
-import Menu from '../components/Webpage/Menu.astro';
-import SocialMediaBar from '../components/SocialMediaBar.astro';
-import Card from '../components/Card/Card.astro';
-import ExpCard from '../components/Card/ExpCard.astro';
-import EstudiosCard from '../components/Card/EstudiosCard.astro';
+import Layout from '@layouts/Layout.astro';
+import Footer from '@components/Webpage/Footer.astro';
+import Menu from '@components/Webpage/Menu.astro';
+import SocialMediaBar from '@components/Others/SocialMediaBar.astro';
+import Card from '@components/Card/Card.astro';
+import ExpCard from '@components/Card/ExpCard.astro';
+import EstudiosCard from '@components/Card/EstudiosCard.astro';
 
 const conocimientos = [
 	{
@@ -59,17 +59,20 @@ const conocimientos = [
 
 const estudios = [
 	{
-		imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Utplogonuevo.svg/2560px-Utplogonuevo.svg.png",
+		imgSrc: "./logoUTP.webp",
+		alt: "Logo de UTP",
 		titulo: "Ingeniería de Software - UTP",
 		estado: "En curso"
 	},
 	{
 		imgSrc: "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
+		alt: "Logo de Udemy",
 		titulo: "Máster Completo en Java de cero a experto 2023 - Udemy",
 		estado: "En curso"
 	},
 	{
 		imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ1lU2P15cEy8AJbOaIArEPdNEGc9-y_6pV6vt1gKGDc0zMFgzGdDpLFv42Sdch85QybY&usqp=CAU",
+		alt: "Logo de Alura",
 		titulo: "Especialización FrontEnd - Alura",
 		estado: "Finalizado"
 	},
@@ -77,15 +80,15 @@ const estudios = [
 
 const experiencia = [
 	{
-		imgSrc:"https://raw.githubusercontent.com/idmr023/ProyectoWeb/main/images/image.png",
-		titulo:"Hotel Antares",
+		imgSrc:"./hotel-antares.webp",
+		titulo: "Hotel Antares",
 		descripcion:"Proyecto en el cual se pueden consultar los clientes y habitaciones, así como editarlos y eliminarlos. Para poder hacer esto el admin debe estar logueado, cada vez que lo haga recibirá un correo de inicio de sesión.",
 		demo:"https://github.com/idmr023/ProyectoWeb",
 		repositorio:"https://github.com/idmr023/ProyectoWeb",
 		tecnologias:["fa-brands fa-java", "fa-solid fa-database"]
 	},
 	{
-		imgSrc:"https://i.ibb.co/1r82B41/proy-Banco-Chanchito-UTP.png",
+		imgSrc:"./banco-chanchitoUTP.webp",
 		titulo:"Banco Chanchito UTP",
 		descripcion:"Trata acerca de una página de un banco fictio, donde el cliente puede regsitrarse, iniciar y cerrar sesión. Además, puede crear su tarjeta, su seguro y consultar su estado de cuenta. Toda la página es responsiva.",
 		demo:"https://chanchitoutp.000webhostapp.com/proyChanchitoUTP/index.php",
@@ -93,7 +96,7 @@ const experiencia = [
 		tecnologias:["fa-brands fa-html5", "fa-brands fa-css3", "fa-brands fa-php", "fa-solid fa-database"]
 	},
 	{
-		imgSrc:"https://i.ibb.co/cFGmvX1/proy-Libreria.png",
+		imgSrc:"./proylibreria.webp",
 		titulo:"Proyecto Libreria",
 		descripcion:"El proyecto presenta rutas protegidas, autenticación y registro del usuario, listado de libros desde la base de datos y envío de correos de contacto. Además, usando Stack AI y Botpress cree un ChatBot personalizado para atender las consultas de los clientes.",
 		demo:"https://libreria-two.vercel.app",
@@ -106,23 +109,22 @@ const experiencia = [
 <Layout title="Portafolio - Inicio">
 	<Menu />
 	<header class="flex flex-wrap w-4/5 mt-12 mb-3 mx-auto">
-		<img class="min-w-56 h-56 mr-7 mb-4 rounded-md sm:w-44" src="https://i.ibb.co/z2HmFCn/profile.jpg" alt="Imagen de perfil">
+		<img class="min-w-56 h-56 mr-7 mb-4 rounded-md sm:w-44" src="./profile.webp" alt="Imagen de perfil">
 		<div class="info">
-			<h1 class="text-4xl text-center text-cyan-600">Ivan Daniel Manrique Roa</h1>
+			<h1 class="text-4xl text-cyan-600">Ivan Daniel Manrique Roa</h1>
 			<p class="text-white">Desarrollador Full Stack</p>
 			<SocialMediaBar/>
 		</div>
-		
 	</header>
 	
 	<section class="flex flex-wrap w-4/5 mx-auto justify-between" id="aboutme">
-		<div>
-			<h1 class="text-4xl text-center text-cyan-600">Sobre mi</h1>
-			<p class="text-white justify-normal">Estudio Ingeniería de Software, me encuentro en el 7mo ciclo.<br/>Amante de los libros ditópicos, el aprendizaje continuo y la tecnología</p>
+		<div class="mb-4">
+			<h1 class="text-4xl p-2 text-center text-cyan-600">Sobre mi</h1>
+			<p class="text-white text-justify">Estudio Ingeniería de Software, me encuentro en el 7mo ciclo.<br/>Amante de los libros ditópicos, el aprendizaje continuo y la tecnología.</p>
 		</div>
 		
-		<div>
-			<h1 class="text-4xl text-cyan-600" id="skills">Conocimientos</h1>
+		<div class="mt-12">
+			<h1 class="text-4xl p-2 text-center text-cyan-600" id="skills">Conocimientos</h1>
 			<div class="flex flex-wrap text-white">
 				{
 					conocimientos.map((conocimiento) => (
@@ -139,13 +141,14 @@ const experiencia = [
 
 	<section class="w-4/5 mt-12 mx-auto justify-between text-white" id="studies">
 		<h1 class="text-4xl p-2 text-center text-cyan-600">Formación académica</h1>
-		<div class="flex flex-wrap justify-between p-6">
+		<div class="flex flex-wrap justify-around p-6">
 			{
 				estudios.map((estudio) => (
 					<EstudiosCard
 						imgSrc={estudio.imgSrc}
 						titulo={estudio.titulo}
 						estado={estudio.estado}
+						alt={estudio.alt}
 					/>
 				))
 			}			
@@ -160,6 +163,7 @@ const experiencia = [
 				experiencia.map((exp) => (
 				<ExpCard
 					imgSrc={exp.imgSrc}
+					alt={exp.titulo}
 					titulo={exp.titulo}
 					descripcion={exp.descripcion}
 					demo={exp.demo}

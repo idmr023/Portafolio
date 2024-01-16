@@ -48,6 +48,10 @@ En este proyecto he hecho mi portafolio, el cual contiene una breve descripción
 
 <!-- ROADMAP -->
 ## 🆕 Actualizaciones
+- Agregar un README
+- Crear página 404
+- Auditar la página con Google
+- Rutas absolutas
 
 <!-- Acerca del creador -->
 ## ℹ️ Acerca de mi
