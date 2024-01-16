@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT LOGO -->
+<!-- Encabezado -->
 <br />
 <div align="center">
   
@@ -24,7 +24,10 @@
         <li><a href="#tecnologias-usadas">Tecnologías usadas</a></li>
       </ul>          
       <ul>
-        <li><a href="#tecnologias-usadas">Contenido</a></li>
+        <li><a href="#contenido">Contenido</a></li>
+      </ul>            
+      <ul>
+        <li><a href="#contenido">Acerca del creador</a></li>
       </ul>    
       <ul>
         <li><a href="#actualizaciones">Actualizaciones</a></li>
@@ -33,23 +36,19 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-## ℹ️ Acerca del proyecto
+<!-- Acerca del proyecto -->
+## 🛈 Acerca del proyecto
 
 ![webpage][webpage-screenshot]
 
-En este pryecto he querido combinar todas las tecnlogías que conozco hasta el momento. La página trata acerca de una biblioteca, esta tiene un catálogo de libros para prestar, así mismo esta biblioteca vende los libros.
+En este proyecto he hecho mi portafolio, el cual contiene una breve descripción sobre mi, demuestra todo mi aprendizaje adquirido, mis estudios y también inlcuye los proyectos que he desarrollado.
 
 
 ### Tecnologías usadas
 
-* [![Vite][Vite.js]][Vite-url]
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Tailwind][Tailwind.css]][Tailwind-url]
-* [![MYSQL][MYSQL.io]][MYSQL-url]
-
-
+* [![React][React.js]]
+* [![Tailwind][Tailwind.css]]
+* [![Astro][Astro]]
 
 <!-- ROADMAP -->
 ## Actualizaciones
@@ -83,29 +82,13 @@ Link del proyecto: [https://github.com/idmr023/Libreria](https://github.com/idmr
 
 <p align="right">(<a href="#readme-top">Volver a arriba</a>)</p>
 
-<!-- LINKS E IMÁGENES -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+<!-- Links e imágenes -->
+
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ivan-daniel-manrique-roa-978a29187
 [webpage-screenshot]: images/screeenshot.png
+
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vite.js]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
-[Vite-url]: https://vitejs.dev
 [Tailwind.css]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
-[Tailwind-url]: https://tailwindcss.com
-[JS.io]: https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square
-[JS-url]: https://developer.mozilla.org/es/docs/Web/JavaScript
-[MYSQL.io]: https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&labelColor=4479A1&logoColor=FFF
-[MYSQL-url]: https://www.mysql.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
+[Astro]: https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=for-the-badge
