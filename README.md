@@ -51,7 +51,9 @@ En este proyecto he hecho mi portafolio, el cual contiene una breve descripción
 ## ℹ️ Acerca de mi
 Soy Ivan Manrique, un estudiante de Ingeniería de Software al que le encanta aprender cosas nuevas por eso para tomando cursos, haciendo proyectos, leyendo documentaciones, etc. Me encanta el desarrollo web.
 <br/>
-[![linkedin][linkedin-shield]][linkedin-url] | [![Outlook][outlookMail][OutlookLink] 
+<br/>
+<br/>
+[![linkedin][linkedin-shield]][linkedin-url]
 
 <p align="right">(<a href="#readme-top">Volver a arriba</a>)</p>
 
