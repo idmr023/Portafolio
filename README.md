@@ -52,6 +52,8 @@ En este proyecto he hecho mi portafolio, el cual contiene una breve descripción
 - Crear página 404
 - Auditar la página con Google
 - Rutas absolutas
+- Agregar el switcher de idiomas (EN-ES)
+- Agregar separación entre los contenedores
 
 <!-- Acerca del creador -->
 ## ℹ️ Acerca de mi

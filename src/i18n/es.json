@@ -1,0 +1,41 @@
+{
+    "WEBPAGE_TITLE": "Portafolio - Ivan Manrique",
+
+    "MENU_A1": "About me",
+    "MENU_A2": "Conocimientos",
+    "MENU_A3": "Formación académica",
+    "MENU_A4": "Experiencia profesional",
+
+    "HEADER_TITLE" : "Ivan Daniel Manrique Roa",
+    "HEADER_DESCRIPTION" : "<strong>Desarrollador FrontEnd</strong> <br/> Actualmente, estoy cursando el séptimo ciclo de la carrera de Ingeniería de Software. Poseo habilidades para trabajar eficientemente bajo presión, realizando múltiples tareas de manera ágil y en equipo. <br> Debido a que me encanta el aprendizaje continuo, periódicamente me inscribo en cursos relevantes para mejorar mis habilidades y aumentar mi empleabilidad.",
+    "HEADER_IMG_ALT" : "Foto de perfil",
+    "HEADER_BADGE_TXT" : "Disponible para trabajar",
+    
+    "SKILLS_TITLE" : "Conocimientos",
+    
+    "STUDIES_TITLE" : "Formación académica",
+    "STUDIES1_TITLE" : "Ingeniería de Software - UTP",
+    "STUDIES1_STATE" : "En curso",
+    "STUDIES1_ALT" : "Logo de UTP",
+    "STUDIES2_TITLE" : "Máster Completo en Java de cero a experto 2023 - Udemy",
+    "STUDIES2_STATE" : "En curso",
+    "STUDIES2_ALT" : "Logo de Udemy",
+    "STUDIES3_TITLE" : "Especialización FrontEnd - Alura",
+    "STUDIES3_STATE" : "Finalizado",
+    "STUDIES3_ALT" : "Logo de Alura",
+
+    "EXP_TITLE" : "Experiencia profesional",
+    "EXP1_TITLE" : "Hotel Antares",
+    "EXP1_DESCRIPTION": "Proyecto en el cual se pueden consultar los clientes y habitaciones, así como editarlos y eliminarlos. Para poder hacer esto el admin debe estar logueado, cada vez que lo haga recibirá un correo de inicio de sesión.",
+    "EXP2_TITLE" : "Banco Chanchito UTP",
+    "EXP2_DESCRIPTION" : "Trata acerca de una página de un banco fictio, donde el cliente puede regsitrarse, iniciar y cerrar sesión. Además, puede crear su tarjeta, su seguro y consultar su estado de cuenta. Toda la página es responsiva.",
+    "EXP3_TITLE" : "Proyecto Libreria",
+    "EXP3_DESCRIPTION" : "El proyecto presenta rutas protegidas, autenticación y registro del usuario, listado de libros desde la base de datos y envío de correos de contacto. Además, usando Stack AI y Botpress cree un ChatBot personalizado para atender las consultas de los clientes.",
+
+    "FOOTER_TITLE" : "Desarrollado por Ivan Manrique | 2023",
+
+    "SMB_ARIA_LABEL1" : "Más información en mi Linkedin",
+    "SMB_ARIA_LABEL2" : "Más información en mi GitHub",
+
+    "NOTFOUND_404" : "404 Página no encontrada"
+}

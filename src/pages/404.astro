@@ -1,5 +1,10 @@
 ---
 import Layout from "@layouts/Layout.astro";
+
+import { getI18N } from '../i18n';
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale})
+
 ---
 
 <Layout title="Portafolio - Inicio">
@@ -8,14 +13,13 @@ import Layout from "@layouts/Layout.astro";
             <img class="porthole" src="https://media.giphy.com/media/3o85xJhackBStfkdBC/giphy.gif" />
         </div>
         <div class="centerer">
-            <h1 class="text one">404 Página no encontrada</h1>
+            <h1 class="text one">{i18n.NOTFOUND_404}</h1>
         </div>
         <div class="centerer">
-            <h1 class="text two">404 Página no encontrada</h1>
+            <h1 class="text two">{i18n.NOTFOUND_404}</h1>
         </div>
     </div>
 </Layout>
-
 
 <style>
 * {
