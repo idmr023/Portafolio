@@ -13,8 +13,9 @@
     
     "SKILLS_TITLE" : "Skills",    
     "SKILLS_SUBTITLE1" : "Programming languages 💻",
-    "SKILLS_SUBTITLE2" : "Data Analysis 📈",
-    "SKILLS_SUBTITLE3" : "Others 🚀",
+    "SKILLS_SUBTITLE2" : "Web Development Frameworks 🌐",
+    "SKILLS_SUBTITLE3" : "Data Analysis 📈",
+    "SKILLS_SUBTITLE4" : "Others 🚀",
     
     "STUDIES_TITLE" : "Academic Education",
     "STUDIES1_TITLE" : "Software Engineering - UTP",
