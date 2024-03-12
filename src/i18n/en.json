@@ -11,7 +11,10 @@
     "HEADER_IMG_ALT" : "Pofile photo" ,
     "HEADER_BADGE_TXT" : "Open to work",
     
-    "SKILLS_TITLE" : "Skills",
+    "SKILLS_TITLE" : "Skills",    
+    "SKILLS_SUBTITLE1" : "Programming languages 💻",
+    "SKILLS_SUBTITLE2" : "Data Analysis 📈",
+    "SKILLS_SUBTITLE3" : "Others 🚀",
     
     "STUDIES_TITLE" : "Academic Education",
     "STUDIES1_TITLE" : "Software Engineering - UTP",

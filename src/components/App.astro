@@ -10,56 +10,6 @@ import { getI18N } from '../i18n';
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale})
 
-const conocimientos = [
-	{
-		nombre: "HTML5",
-		path: "fa-brands fa-html5"
-	},
-	{
-		nombre: "CSS3",
-		path: "fa-brands fa-css3"
-	},
-	{
-		nombre: "JS",
-		path: "fa-brands fa-js"
-	},
-	{
-		nombre:"GitHub",
-		path:"fa-brands fa-github",
-				
-	},
-	{
-		nombre:"Git",
-		path:"fa-brands fa-git",
-				
-	},
-	{
-		nombre:"SQL",
-		path:"fa-regular fa-file-code"
-				
-	},
-	{
-		nombre: "MySQL",
-		path: "fa-solid fa-database"
-	},
-	{
-		nombre: "JAVA",
-		path: "fa-brands fa-java"
-	},
-	{
-		nombre: "Microsfot Excell",
-		path: "fa-solid fa-file-excel"
-	},
-	{
-		nombre: "React",
-		path: "fa-brands fa-react"
-	},
-	{
-		nombre: "PHP",
-		path: "fa-brands fa-php"
-	},
-]
-
 const estudios = [
 	{
 		imgSrc: "./logoUTP.webp",
@@ -88,7 +38,8 @@ const experiencia = [
 		descripcion: i18n.EXP1_DESCRIPTION,
 		demo:"https://github.com/idmr023/ProyectoWeb",
 		repositorio:"https://github.com/idmr023/ProyectoWeb",
-		tecnologias:["fa-brands fa-java", "fa-solid fa-database"]
+		tecnologias:["fa-brands fa-java", "fa-solid fa-database"],
+		gradiente : true
 	},
 	{
 		imgSrc:"./banco-chanchitoUTP.webp",
@@ -96,7 +47,8 @@ const experiencia = [
 		descripcion: i18n.EXP2_DESCRIPTION,
 		demo:"https://chanchitoutp.000webhostapp.com/proyChanchitoUTP/index.php",
 		repositorio:"https://github.com/idmr023/ChanchitoUTP",
-		tecnologias:["fa-brands fa-html5", "fa-brands fa-css3", "fa-brands fa-php", "fa-solid fa-database"]
+		tecnologias:["fa-brands fa-html5", "fa-brands fa-css3", "fa-brands fa-php", "fa-solid fa-database"],
+		gradiente : false
 	},
 	{
 		imgSrc:"./proylibreria.webp",
@@ -104,7 +56,8 @@ const experiencia = [
 		descripcion: i18n.EXP3_DESCRIPTION,
 		demo:"https://libreria-two.vercel.app",
 		repositorio:"https://github.com/idmr023/Libreria",
-		tecnologias:["fa-brands fa-react", "fa-solid fa-database"]
+		tecnologias:["fa-brands fa-react", "fa-solid fa-database"],
+		gradiente : true
 	}
 ]
 
@@ -137,18 +90,29 @@ const experiencia = [
 			<Badge>{i18n.HEADER_BADGE_TXT}</Badge>
 		</header>
 		
-		<section class="flex flex-wrap justify-around mt-12 mx-auto">
+		<section class="justify-around mt-12 mx-auto">
 			
 				<h1 class="text-4xl p-2 text-center text-cyan-600" id="skills">{i18n.SKILLS_TITLE}</h1>
-				<div class="flex flex-wrap text-white">
-					{
-						conocimientos.map((conocimiento) => (
-							<Card
-								path={conocimiento.path}
-								nombre={conocimiento.nombre}
-								/>
-						))
-					}
+				<div class="flex flex-wrap text-white text-justify justify-center">
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE1}
+						descripcion='Java, JavaScript, Python, PHP Fortran, Cobol'
+					/>
+
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE2}
+						descripcion='React, Angular, Vue.js, Svelte, Boostrap, Astro'
+					/>
+					
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE3}
+						descripcion='Microsoft Excell, PowerBI, pandas, Jupyter Notbook, NumPy'
+					/>
+					
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE4}
+						descripcion='MySQL, SQL, Trello, Figma'
+					/>
 				</div>
 		</section>
 	
@@ -170,7 +134,7 @@ const experiencia = [
 		
 		<section class="w-4/5 mx-auto justify-between text-white" id="proyects">
 			<h1 class="text-4xl p-2 text-center text-cyan-600">{i18n.EXP_TITLE}</h1>
-			<div class="flex flex-wrap p-6 justify-around">
+			<div class="p-6 justify-around">
 	
 				{
 					experiencia.map((exp) => (
@@ -182,11 +146,12 @@ const experiencia = [
 						demo={exp.demo}
 						repositorio={exp.repositorio}
 						tecnologias={exp.tecnologias}
+						gradiente={exp.gradiente}
 					/>
 					
 					))
 				}
-	
+
 			</div>
 		</section>
 	

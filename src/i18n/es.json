@@ -12,6 +12,10 @@
     "HEADER_BADGE_TXT" : "Disponible para trabajar",
     
     "SKILLS_TITLE" : "Conocimientos",
+    "SKILLS_SUBTITLE1" : "Lenguajes de programacion 💻",
+    "SKILLS_SUBTITLE2" : "Web Development Frameworks 🌐",
+    "SKILLS_SUBTITLE3" : "Análisis de datos 📈",
+    "SKILLS_SUBTITLE4" : "Otros 🚀",
     
     "STUDIES_TITLE" : "Formación académica",
     "STUDIES1_TITLE" : "Ingeniería de Software - UTP",
