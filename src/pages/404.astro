@@ -1,0 +1,118 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import { getI18N } from '../i18n';
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale})
+
+---
+
+<Layout title="Portafolio - Inicio">
+    <div>
+        <div class="centerer">
+            <img class="porthole" src="https://media.giphy.com/media/3o85xJhackBStfkdBC/giphy.gif" />
+        </div>
+        <div class="centerer">
+            <h1 class="text one">{i18n.NOTFOUND_404}</h1>
+        </div>
+        <div class="centerer">
+            <h1 class="text two">{i18n.NOTFOUND_404}</h1>
+        </div>
+    </div>
+</Layout>
+
+<style>
+* {
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+html, body { 
+	height: 100%; 
+	background-color: lighten(#090D19, 20%);
+	background-image: url(https://www.colorhexa.com/13151a.png);
+	background-size: cover;
+	background-position: 50% 40%;
+}
+
+body { 
+	mix-blend-mode: screen;
+}
+
+.centerer {
+	position: absolute;
+	top: 0; right: 0; left: 0; bottom: 0;
+	height: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.porthole {
+	width: 30vw;
+	height: auto;
+	mix-blend-mode: multiply;
+}
+
+.text { 
+	font-size: 6vw;
+	text-transform: uppercase;
+	letter-spacing: 1vw;
+	color: transparent;
+    width: 100%;
+	text-align: center;
+	mix-blend-mode: screen;
+}
+
+.one {
+	text-shadow: 0 0.1vw 0.05vw #0891b2;
+}
+
+.two {
+	text-shadow: 0 0 0.1vw #FFFFFF;
+	animation: text-2 1.5s infinite;
+}
+
+@keyframes text-2 {
+	0% {
+		transform: scale(1) translate(0, 0) skew(0deg);
+	}
+	7% {
+		transform:  scale(1) translate(0, 0) skew(0deg);
+	}
+	8% { 
+		transform:  scale(1.2) translate(-20px, 30px) skew(0deg);
+	}
+	11% { 
+		transform:  scale(1.2) translate(-20px, 30px) skew(0deg);
+	}
+	12% {
+		transform:  scale(0) translate(0,0) skew(0deg);
+	}
+	29% { 
+		transform: skew(-50deg);
+	}
+	32% { 
+		transform: skew(0deg);
+	}
+	41% {
+		transform: skew(0deg);
+	}
+	67% {
+		transform:  scale(1) translate(0, 0) skew(0deg);
+	}
+	68% { 
+		transform:  scale(1.2) translate(50px, 35px) skew(0deg);
+	}
+	71% { 
+		transform:  scale(1.2) translate(50px, 35px) skew(0deg);
+	}
+	72% {
+		transform:  scale(0) translate(0,0) skew(0deg);
+	}
+	100% {
+		transform: skew(0deg);
+	}
+}
+</style>

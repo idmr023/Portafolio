@@ -1,0 +1,35 @@
+---
+import DemoButton from "../Others/DemoButton.astro";
+
+interface Props {
+  imgSrc: string;
+  alt: string;
+  titulo: string;
+  descripcion: string;
+  demo: string;
+  repositorio: string;
+  tecnologias: string[];
+  gradiente : boolean;
+}
+
+const { imgSrc, titulo, descripcion, demo, repositorio, tecnologias, alt, gradiente } =
+  Astro.props;
+---
+
+<div class={`flex flex-wrap min-w-72 min-h-36 text-justify p-8 ${gradiente ? 'bg-gradient-to-r from-slate-800 to-cyan-900' : ''}`}>
+  <div class="flex justify-between mb-2">
+    <h2 class="text-2xl mr-2.5">{titulo}</h2>
+    {tecnologias.map((tecnologia: string) => <i class={`${tecnologia} text-xl mx-4`} />)}
+  </div>
+
+  <div>
+    <img src={imgSrc} alt={alt}/>
+    <p class="text-2xl"></p>
+    <p>{descripcion}</p>
+  </div>
+  
+  <div class="m-4">
+    <a href={demo}><DemoButton/></a>
+    <a href={repositorio}>GitHub</a>
+  </div>
+</div>

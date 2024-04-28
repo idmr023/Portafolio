@@ -1,0 +1,198 @@
+---
+import Layout from '@layouts/Layout.astro';
+import SocialMediaBar from '@components/Others/SocialMediaBar.astro';
+import Card from '@components/Card/Card.astro';
+import ExpCard from '@components/Card/ExpCard.astro';
+import EstudiosCard from '@components/Card/EstudiosCard.astro';
+import Badge from '@components/Badge.astro';
+
+import { getI18N } from '../i18n';
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale})
+
+const estudios = [
+	{
+		imgSrc: "./logoUTP.webp",
+		alt: i18n.STUDIES1_ALT,
+		titulo: i18n.STUDIES1_TITLE,
+		estado: i18n.STUDIES1_STATE
+	},
+	{
+		imgSrc: "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
+		alt: i18n.STUDIES2_ALT,
+		titulo: i18n.STUDIES2_TITLE,
+		estado: i18n.STUDIES2_STATE
+	},
+	{
+		imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ1lU2P15cEy8AJbOaIArEPdNEGc9-y_6pV6vt1gKGDc0zMFgzGdDpLFv42Sdch85QybY&usqp=CAU",
+		alt: i18n.STUDIES3_ALT,
+		titulo: i18n.STUDIES3_TITLE,
+		estado: i18n.STUDIES3_STATE
+	},
+]
+
+const experiencia = [
+	{
+		imgSrc:"./hotel-antares.webp",
+		titulo: i18n.EXP1_TITLE,
+		descripcion: i18n.EXP1_DESCRIPTION,
+		demo:"https://github.com/idmr023/ProyectoWeb",
+		repositorio:"https://github.com/idmr023/ProyectoWeb",
+		tecnologias:["fa-brands fa-java", "fa-solid fa-database"],
+		gradiente : true
+	},
+	{
+		imgSrc:"./banco-chanchitoUTP.webp",
+		titulo: i18n.EXP2_TITLE,
+		descripcion: i18n.EXP2_DESCRIPTION,
+		demo:"https://chanchitoutp.000webhostapp.com/proyChanchitoUTP/index.php",
+		repositorio:"https://github.com/idmr023/ChanchitoUTP",
+		tecnologias:["fa-brands fa-html5", "fa-brands fa-css3", "fa-brands fa-php", "fa-solid fa-database"],
+		gradiente : false
+	},
+	{
+		imgSrc:"./proylibreria.webp",
+		titulo: i18n.EXP3_TITLE,
+		descripcion: i18n.EXP3_DESCRIPTION,
+		demo:"https://libreria-two.vercel.app",
+		repositorio:"https://github.com/idmr023/Libreria",
+		tecnologias:["fa-brands fa-react", "fa-solid fa-database"],
+		gradiente : true
+	}
+]
+
+---
+<Layout title={i18n.WEBPAGE_TITLE}>
+    
+	<nav class="w-full xl:flex xl:justify-between">
+		<ul class="block justify-between text-cyan-400 m-10 text-xl xl:flex sm:w-1/2">
+			<li><a href="#aboutme" class="hover:text-cyan-600">{i18n.MENU_A1}</a></li>
+			<li><a href="#skills" class="hover:text-cyan-600">{i18n.MENU_A2}</a></li>
+			<li><a href="#studies" class="hover:text-cyan-600">{i18n.MENU_A3}</a></li>
+			<li><a href="#proyects" class="hover:text-cyan-600">{i18n.MENU_A4}</a></li>
+		</ul>
+
+		<ul class="w-28  text-cyan-400 m-10 text-xl xl:flex xl:w-52">
+			<li class="bg-gray-800 m-1 p-1"><a href="./">Español 🇵🇪</a></li>
+			<li class="bg-gray-950 m-1 p-1"><a href="./en">English 🇺🇸</a></li>
+		</ul>
+	</nav>
+
+    <div class="w-2/3 justify-center mx-auto mt-12">
+		
+		<header class="flex flex-wrap justify-evenly" id="aboutme">
+			<img class="min-w-56 h-56 rounded-md sm:w-44" src="./profile.webp" alt={i18n.HEADER_IMG_ALT}>
+			<div class="max-w-lg">
+				<h1 class="text-4xl text-cyan-600">{i18n.HEADER_TITLE}</h1>
+				<p class="text-white text-justify" set:html={i18n.HEADER_DESCRIPTION}></p>
+				<a href="https://drive.google.com/file/d/1s3r142-nLwvRQwkVCSirjMSW39X0O9qo/view?usp=sharing"><p class="text-white text-justify"> Descrgar CV</p></a>
+				<SocialMediaBar/>
+			</div>
+			<Badge>{i18n.HEADER_BADGE_TXT}</Badge>
+		</header>
+		
+		<section class="justify-around mt-12 mx-auto">
+			
+				<h1 class="text-4xl p-2 text-center text-cyan-600" id="skills">{i18n.SKILLS_TITLE}</h1>
+				<div class="flex flex-wrap text-white text-justify justify-center">
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE1}
+						descripcion='Java, JavaScript, Python, PHP Fortran, Cobol'
+					/>
+
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE2}
+						descripcion='React, Angular, Vue.js, Svelte, Boostrap, Astro'
+					/>
+					
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE3}
+						descripcion='Microsoft Excell, PowerBI, pandas, Jupyter Notbook, NumPy'
+					/>
+					
+					<Card 
+						nombre={i18n.SKILLS_SUBTITLE4}
+						descripcion='MySQL, SQL, Trello, Figma'
+					/>
+				</div>
+		</section>
+	
+		<section class="w-4/5 mt-12 mx-auto justify-between text-white" id="studies">
+			<h1 class="text-4xl p-2 text-center text-cyan-600">{i18n.STUDIES_TITLE}</h1>
+			<div class="flex flex-wrap justify-around p-6">
+				{
+					estudios.map((estudio) => (
+						<EstudiosCard
+							imgSrc={estudio.imgSrc}
+							titulo={estudio.titulo}
+							estado={estudio.estado}
+							alt={estudio.alt}
+						/>
+					))
+				}			
+			</div>	
+		</section>
+
+				
+		<section class="justify-around mt-12 mx-auto">
+			
+			<h1 class="text-4xl p-2 text-center text-cyan-600" id="skills">{i18n.CERTIFICATIONS_TITLE}</h1>
+			<div class="flex flex-wrap text-white text-justify justify-center">
+				<Card 
+					nombre={i18n.CERTIFICATIONS_SUBTITLE1}
+					descripcion={i18n.CERTIFICATIONS_DESCRIPTION1}
+				/>
+
+				<Card 
+					nombre={i18n.CERTIFICATIONS_SUBTITLE2}
+					descripcion={i18n.CERTIFICATIONS_DESCRIPTION2}
+				/>
+				
+				<Card 
+					nombre={i18n.CERTIFICATIONS_SUBTITLE3}
+					descripcion={i18n.CERTIFICATIONS_DESCRIPTION3}
+				/>
+				
+				<Card 
+					nombre={i18n.CERTIFICATIONS_SUBTITLE4}
+					descripcion={i18n.CERTIFICATIONS_DESCRIPTION4}
+				/>
+				
+				<Card 
+					nombre={i18n.CERTIFICATIONS_SUBTITLE5}
+					descripcion={i18n.CERTIFICATIONS_DESCRIPTION5}
+				/>
+			</div>
+	</section>
+		
+		<section class="w-4/5 mx-auto justify-between text-white" id="proyects">
+			<h1 class="text-4xl p-2 text-center text-cyan-600">{i18n.EXP_TITLE}</h1>
+			<div class="p-6 justify-around">
+	
+				{
+					experiencia.map((exp) => (
+					<ExpCard
+						imgSrc={exp.imgSrc}
+						alt={exp.titulo}
+						titulo={exp.titulo}
+						descripcion={exp.descripcion}
+						demo={exp.demo}
+						repositorio={exp.repositorio}
+						tecnologias={exp.tecnologias}
+						gradiente={exp.gradiente}
+					/>
+					
+					))
+				}
+
+			</div>
+		</section>
+	
+		<footer class="w-full">
+			<p class="text-cyan-400 hover:text-cyan-300 text-center 2xl p-5">{i18n.FOOTER_TITLE}</p>
+		</footer>
+
+
+	</div>
+
+</Layout>

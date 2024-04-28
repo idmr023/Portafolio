@@ -1,0 +1,57 @@
+{
+    "WEBPAGE_TITLE": "Portfolio - Ivan Manrique",
+
+    "MENU_A1": "Acerca de mi",
+    "MENU_A2": "Skills",
+    "MENU_A3": "Academic Education",
+    "MENU_A4": "Professional Experience",
+
+    "HEADER_TITLE" : "Ivan Daniel Manrique Roa",
+    "HEADER_DESCRIPTION" : "<strong>FrontEnd Developer</strong> <br/> Currently, I am in the seventh semester of the Software Engineering program. I possess skills to work efficiently under pressure, handling multiple tasks swiftly and collaboratively. <br> Because I have a strong passion for continuous learning, I regularly enroll in relevant courses to enhance my skills and increase my employability.",
+    "HEADER_IMG_ALT" : "Pofile photo" ,
+    "HEADER_BADGE_TXT" : "Open to work",
+    
+    "SKILLS_TITLE" : "Skills",    
+    "SKILLS_SUBTITLE1" : "Programming languages 💻",
+    "SKILLS_SUBTITLE2" : "Web Development Frameworks 🌐",
+    "SKILLS_SUBTITLE3" : "Data Analysis 📈",
+    "SKILLS_SUBTITLE4" : "Others 🚀",
+    
+    "STUDIES_TITLE" : "Academic Education",
+    "STUDIES1_TITLE" : "Software Engineering - UTP",
+    "STUDIES1_STATE" : "In Progress",
+    "STUDIES1_ALT" : "UTP Logo",
+    "STUDIES2_TITLE" : "Master Complete in Java from Zero to Expert 2023 - Udemy",
+    "STUDIES2_STATE" : "In Progress",
+    "STUDIES2_ALT" : "Udemy Logo",
+    "STUDIES3_TITLE" : "FrontEnd Specialization - Alura",
+    "STUDIES3_STATE" : "Completed",
+    "STUDIES3_ALT" : "Alura Logo",
+
+    "CERTIFICATIONS_TITLE" : "Certifications",
+    "CERTIFICATIONS_SUBTITLE1" : "Google IT Support, Coursera, 2021",
+    "CERTIFICATIONS_DESCRIPTION1" : "Debugging | Cloud Computing | Network protocols | Tecniques and Encryptation Algorithms",
+    "CERTIFICATIONS_SUBTITLE2" : "Oracle Next Education Front-end, Alura Latam, 2023",
+    "CERTIFICATIONS_DESCRIPTION2" : "HTML 5 | CSS3 | JS | ReactJS | PHP | MySQL | Git & GitHub | Trello | Figma | Business Agility",
+    "CERTIFICATIONS_SUBTITLE3" : "Certificate of Advanced English, Idiomas Católica, 2024",
+    "CERTIFICATIONS_DESCRIPTION3" : "Advance English",
+    "CERTIFICATIONS_SUBTITLE4" : "Data Analysis with Python, Free Code Camp, 2024",
+    "CERTIFICATIONS_DESCRIPTION4" : "Data Cleaning | Python| Numpy | Pandas | Matplotlib | Seaborn | Jupyter Notebook",
+    "CERTIFICATIONS_SUBTITLE5" : "Complete Master in Java from 0 to expert, Udemy, In progress",
+    "CERTIFICATIONS_DESCRIPTION5" : "POO | Java Generics | Threads | Recursividad | JDBC | Jakarta EE 9 | Spring Framework 5 | SQL",
+
+    "EXP_TITLE" : "Professional Experience",
+    "EXP1_TITLE" : "Hotel Antares",
+    "EXP1_DESCRIPTION": "Project where clients and rooms can be queried, edited, and deleted. Admin must be logged in, and each login triggers a notification email.",
+    "EXP2_TITLE" : "Chanchito UTP Bank",
+    "EXP2_DESCRIPTION" : "Fictional bank page allowing clients to register, log in and log out. Clients can create cards, insurance, and check their account status. The entire page is responsive.",
+    "EXP3_TITLE" : "Library Project",
+    "EXP3_DESCRIPTION" : "The project includes protected routes, user authentication and registration, listing of books from the database, and sending contact emails. Additionally, using Stack AI and Botpress, a custom ChatBot was created to handle client queries.",
+
+    "FOOTER_TITLE" : "Developed by Ivan Manrique | 2023",
+
+    "SMB_ARIA_LABEL1" : "More information in my Linkedin",
+    "SMB_ARIA_LABEL2" : "More information in my GitHub",
+
+    "NOTFOUND_404" : "404 Page not found"
+}

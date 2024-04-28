@@ -1,0 +1,40 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script src="https://kit.fontawesome.com/47427cc084.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&family=Titillium+Web:wght@200&display=swap');
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	h2{
+		font-size: 18px;
+	}
+	a, p, select, option, button, span {
+		font-family: 'Titillium Web', sans-serif;
+	}
+	html {
+		background: #13151a;
+		background-size: 224px;
+	}
+</style>

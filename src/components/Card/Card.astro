@@ -1,0 +1,13 @@
+---
+interface Props {
+	nombre: string;
+	descripcion: string;
+}
+
+const { descripcion, nombre } = Astro.props;
+---
+
+<div class="m-5 w-60">
+	<h2>{nombre}</h2>
+	<p>{descripcion}</p>
+</div>
